@@ -31,4 +31,8 @@ class Bottles
       "Take one down and pass it around"
     end
   end
+
+  def song
+    verses(99, 0)
+  end
 end
