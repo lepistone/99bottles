@@ -4,6 +4,10 @@ class Bottles
     "\n#{take_down count}, #{say_bottles count-1} of beer on the wall.\n"
   end
 
+  def verses(first, second)
+    "#{verse first}\n#{verse second}"
+  end
+
   def say_bottles(count)
     case count
     when -1
