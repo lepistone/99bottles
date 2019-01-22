@@ -4,8 +4,8 @@ class Bottles
     "\n#{take_down count}, #{say_bottles count-1} of beer on the wall.\n"
   end
 
-  def verses(first, second)
-    "#{verse first}\n#{verse second}"
+  def verses(start, finish)
+    start.downto(finish).map{|i| verse(i)}.join("\n")
   end
 
   def say_bottles(count)
